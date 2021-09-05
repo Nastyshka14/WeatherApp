@@ -6,32 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <div class="wrapper">
-    <header class="header">
-        <div class="header__input">
-            <form class="header__form">
-                <input class="header__form-input" type="text" placeholder="Enter your city here">
-                <button class="header__form-btn" type="submit">Submit</button>
-            </form>
-        </div>
-    </header>
+        <header class="header">
+            <div class="header__form">
+                <input class="header__input" type="text" placeholder="Enter your city here">
+                <button class="header__btn">Submit</button>
+            </div>
+        </header>
 
-    <main class="main">
-        <div class="weather__wrap">
-            <div class="weather__main">
-                <p class="weather__main-temperature"></p>
-                <p class="weather__main-city"></p>
+        <main class="main">
+            <div class="weather__wrap">
+                <div class="weather__main">
+                    <img class="weather__main-icon"></img>
+                    <p class="weather__main-temperature"></p>
+                    <p class="weather__main-city"></p>
+                </div>
+                <div class="weather__info">
+                    <p class="weather__info-feels-like"></p>
+                    <p class="weather__info-humidity"></p>
+                    <p class="weather__info-speed"></p>
+                </div>
             </div>
-            <div class="weather__info">
-                <p class="weather__feels-like"></p>
-                <p class="weather__humidity"></p>
-                <p class="weather__speed"></p>
-            </div>
-        </div>
-    </main>
+        </main>
    </div> 
 </body>
 </html>
